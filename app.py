@@ -241,7 +241,7 @@ iframe_html = f"""
 <div style='width:100%; max-width:1000px; margin:0 auto;'>
     <iframe
         src='data:text/html;base64,{html_b64}'
-        style='width:100%; height:600px; border-radius:10px; overflow:hidden; border:0; box-shadow:0 2px 16px rgba(0,0,0,0.10);'
+        style='width:100%; height:420px; border-radius:10px; overflow:hidden; border:0; box-shadow:0 2px 16px rgba(0,0,0,0.10);'
         sandbox='allow-scripts allow-same-origin'
     ></iframe>
 </div>
