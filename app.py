@@ -58,7 +58,7 @@ st.markdown(
                 top: 0;
                 left: 0;
                 width: 100vw;
-                height: 44px;
+                height: 42px;
                 background: #e6f2ff;
                 color: #222;
                 z-index: 10001;
@@ -138,7 +138,7 @@ st.markdown(
                 }
             }
             .main, .block-container, .wrap {
-                margin-top: 48px !important;
+                margin-top: -70px !important;
             }
                     .main, .block-container {
                         max-width: 800px;
@@ -163,7 +163,7 @@ st.markdown(
             .card h4 {margin:.5rem 0 .25rem 0}
             .muted {color:rgba(0,0,0,.55)}
             .footer {text-align:center; opacity:.7; margin: 24px 0 8px 0}
-            header[data-testid="stHeader"] {visibility: hidden; height: 0px;}
+            header[data-testid="stHeader"] { display: none; }
         </style>
         <div class='hamburger-navbar'>
             <span class='nav-title'>Hemanta Ph. Portfolio</span>
