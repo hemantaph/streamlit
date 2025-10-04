@@ -1,0 +1,23 @@
+# Streamlit configuration file
+# See https://docs.streamlit.io/library/advanced-features/configuration for options
+
+[server]
+headless = true
+runOnSave = true
+
+[theme]
+base = "light"
+primaryColor = "#2b6cb0"
+backgroundColor = "#f8f9fa"
+secondaryBackgroundColor = "#e2e8f0"
+textColor = "#222"
+font = "sans serif"
+
+[client]
+caching = true
+
+[browser]
+gatherUsageStats = false
+
+[ui]
+# Center content by default (custom CSS will also be added in app.py)
