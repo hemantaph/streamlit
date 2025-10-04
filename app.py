@@ -141,17 +141,17 @@ st.markdown(
                 margin-top: -70px !important;
             }
                     .main, .block-container {
-                        max-width: 800px;
+                        max-width: 960px;
                         margin-left: auto;
                         margin-right: auto;
-                        padding-left: 32px;
-                        padding-right: 32px;
+                        padding-left: 10px;
+                        padding-right: 10px;
                     }
                     .wrap {
-                        max-width: 800px;
+                        max-width: 960px;
                         margin: 0 auto;
-                        padding-left: 32px;
-                        padding-right: 32px;
+                        padding-left: 10px;
+                        padding-right: 10px;
                     }
             .hero-name {font-size: 3rem; font-weight: 800; margin: .25rem 0 0 0}
             .light-sub {opacity:.7; margin-top: .25rem}
