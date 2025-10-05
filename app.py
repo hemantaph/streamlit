@@ -186,8 +186,6 @@ st.markdown(
         unsafe_allow_html=True,
 )
 
-
-
 # ---------- 1) COVER: Three.js Diagram with Profile Overlay ----------
 import streamlit.components.v1 as components
 from base64 import b64encode
@@ -249,7 +247,7 @@ iframe_html = f"""
 st.markdown(iframe_html, unsafe_allow_html=True)
 
 # Add some vertical space between the iframe and divider
-st.markdown("<div style='height:10px;'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:5px;'></div>", unsafe_allow_html=True)
 
 # ---------- 2) PROFILE (left) + NAME (right) ----------
 # (Profile and name now appear in the cover overlay above)
@@ -261,6 +259,8 @@ if DIVIDER.exists():
 # ---------- 4) SUBHEADER: Welcome ----------
 st.markdown("<div class='blue-subheader'>Welcome to my portfolio</div>", unsafe_allow_html=True)
 
+st.markdown("<div style='height:5px;'></div>", unsafe_allow_html=True)
+
 # ---------- 5) QUOTE STYLE INTRO ----------
 INTRO = (
     "I am an astro-physicist with a curious mind, hoping to explore the universe through quantum physics and general relativity. "
@@ -270,11 +270,13 @@ INTRO = (
 )
 st.markdown(f"<div class='blockquote'>{INTRO}</div>", unsafe_allow_html=True)
 
+st.markdown("<div style='height:5px;'></div>", unsafe_allow_html=True)
+
 # ---------- 6) RECTANGULAR LINK BUBBLES ----------
 LINKS = [
-    ("Resume", "#", "📄"),
-    ("University Website", "#", "🏛️"),
-    ("GitHub", "https://github.com/hemantaph", "🐙"),
+    ("Resume", "https://drive.google.com/file/d/1Bq475LHlU2hTwOhqhat_QEjLZ4Y-m2HO/view?usp=sharing", "<img src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' width='25' style='vertical-align:middle;margin-right:4px;'>"),
+    ("University Website", "https://www.caluniv.ac.in/", "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Emblem_of_CU.png/500px-Emblem_of_CU.png' width='25' style='vertical-align:middle;margin-right:4px;'>"),
+    ("GitHub", "https://github.com/hemantaph", "<img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' width='25' style='vertical-align:middle;margin-right:4px;'>"),
 ]
 link_html = "".join([f"<a class='link-bubble' href='{url}' target='_blank'>{icon} {txt}</a>" for txt, url, icon in LINKS])
 st.markdown(link_html, unsafe_allow_html=True)
