@@ -159,7 +159,7 @@ st.markdown(
             .light-sub {opacity:.7; margin-top: .25rem}
             .blue-subheader {background: rgba(220,220,220); padding:10px 14px; border-radius:8px; font-weight:700; font-size: 1.2rem; margin-bottom: 1rem;}
             .blockquote {border-left: 4px solid #999; padding: 10px 14px; background: #fafafa; border-radius: 6px; margin-bottom: 1rem;}
-            .link-bubble {display:inline-block; padding:10px 16px; border-radius:8px; border:1px solid rgba(0,0,0,.15); background:white; margin-right:10px; text-decoration:none;}
+            .link-bubble {display:inline-block; padding:10px 16px; border-radius:8px; border:1px solid rgba(0,0,0,.15); background:white; margin-right:10px; margin-bottom: 10px; text-decoration:none;}
             .card {border:1px solid rgba(0,0,0,.08); border-radius:14px; padding:12px; margin-bottom: 1rem;}
             .card img {border-radius:10px;}
             .card h4 {margin:.5rem 0 .25rem 0}
