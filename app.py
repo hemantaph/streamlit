@@ -238,15 +238,18 @@ st.markdown(
 from base64 import b64encode as _b64
 html_b64 = _b64(html_content.encode()).decode()
 iframe_html = f"""
-<div style='width:100%; max-width:1000px; margin:0 auto;'>
+<div style='width:100%; max-width:1000px; margin:0 auto; height:420px; overflow:hidden; border-radius:10px; box-shadow:0 2px 16px rgba(0,0,0,0.10);'>
     <iframe
         src='data:text/html;base64,{html_b64}'
-        style='width:100%; height:420px; border-radius:10px; overflow:hidden; border:0; box-shadow:0 2px 16px rgba(0,0,0,0.10);'
+        style='width:100%; height:600px; border:0; margin-top: -160px;'
         sandbox='allow-scripts allow-same-origin'
     ></iframe>
 </div>
 """
 st.markdown(iframe_html, unsafe_allow_html=True)
+
+# Add some vertical space between the iframe and divider
+st.markdown("<div style='height:100px;'></div>", unsafe_allow_html=True)
 
 # ---------- 2) PROFILE (left) + NAME (right) ----------
 # (Profile and name now appear in the cover overlay above)
