@@ -238,7 +238,7 @@ st.markdown(
 from base64 import b64encode as _b64
 html_b64 = _b64(html_content.encode()).decode()
 iframe_html = f"""
-<div style='width:100%; max-width:800px; margin:0 auto; height:420px; overflow:hidden; border-radius:10px; box-shadow:0 2px 16px rgba(0,0,0,0.10);'>
+<div style='width:100%; max-width:1000px; margin:0 auto; height:420px; overflow:hidden; border-radius:10px; box-shadow:0 2px 16px rgba(0,0,0,0.10);'>
     <iframe
         src='data:text/html;base64,{html_b64}'
         style='width:100%; height:600px; border:0; margin-top: -150px;'
