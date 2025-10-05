@@ -157,10 +157,10 @@ st.markdown(
                     }
             .hero-name {font-size: 3rem; font-weight: 800; margin: .25rem 0 0 0}
             .light-sub {opacity:.7; margin-top: .25rem}
-            .blue-subheader {background: rgba(220,220,220); padding:10px 14px; border-radius:8px; font-weight:700; font-size: 1.2rem;}
-            .blockquote {border-left: 4px solid #999; padding: 10px 14px; background: #fafafa; border-radius: 6px;}
+            .blue-subheader {background: rgba(220,220,220); padding:10px 14px; border-radius:8px; font-weight:700; font-size: 1.2rem; margin-bottom: 1rem;}
+            .blockquote {border-left: 4px solid #999; padding: 10px 14px; background: #fafafa; border-radius: 6px; margin-bottom: 1rem;}
             .link-bubble {display:inline-block; padding:10px 16px; border-radius:8px; border:1px solid rgba(0,0,0,.15); background:white; margin-right:10px; text-decoration:none;}
-            .card {border:1px solid rgba(0,0,0,.08); border-radius:14px; padding:12px;}
+            .card {border:1px solid rgba(0,0,0,.08); border-radius:14px; padding:12px; margin-bottom: 1rem;}
             .card img {border-radius:10px;}
             .card h4 {margin:.5rem 0 .25rem 0}
             .muted {color:rgba(0,0,0,.55)}
@@ -249,7 +249,7 @@ iframe_html = f"""
 st.markdown(iframe_html, unsafe_allow_html=True)
 
 # Add some vertical space between the iframe and divider
-st.markdown("<div style='height:5px;'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:1rem;'></div>", unsafe_allow_html=True)
 
 # ---------- 2) PROFILE (left) + NAME (right) ----------
 # (Profile and name now appear in the cover overlay above)
@@ -261,8 +261,6 @@ if DIVIDER1.exists():
 # ---------- 4) SUBHEADER: Welcome ----------
 st.markdown("<div class='blue-subheader'>Welcome to my portfolio</div>", unsafe_allow_html=True)
 
-st.markdown("<div style='height:5px;'></div>", unsafe_allow_html=True)
-
 # ---------- 5) QUOTE STYLE INTRO ----------
 INTRO = (
     "I am an astro-physicist with a curious mind, hoping to explore the universe through quantum physics and general relativity. "
@@ -271,8 +269,6 @@ INTRO = (
     "and art is how I find its elegance and beauty."
 )
 st.markdown(f"<div class='blockquote'>{INTRO}</div>", unsafe_allow_html=True)
-
-st.markdown("<div style='height:5px;'></div>", unsafe_allow_html=True)
 
 # ---------- 6) RECTANGULAR LINK BUBBLES ----------
 LINKS = [
