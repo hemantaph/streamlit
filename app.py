@@ -272,9 +272,9 @@ st.markdown(f"<div class='blockquote'>{INTRO}</div>", unsafe_allow_html=True)
 
 # ---------- 6) RECTANGULAR LINK BUBBLES ----------
 LINKS = [
-    ("Resume", "https://drive.google.com/file/d/1Bq475LHlU2hTwOhqhat_QEjLZ4Y-m2HO/view?usp=sharing", "<img src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' width='25' style='vertical-align:middle;margin-right:4px;'>"),
-    ("University Website", "https://www.caluniv.ac.in/", "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Emblem_of_CU.png/500px-Emblem_of_CU.png' width='25' style='vertical-align:middle;margin-right:4px;'>"),
-    ("GitHub", "https://github.com/hemantaph", "<img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' width='25' style='vertical-align:middle;margin-right:4px;'>"),
+    ("Resume", "https://drive.google.com/file/d/1Bq475LHlU2hTwOhqhat_QEjLZ4Y-m2HO/view?usp=sharing", "<img src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' width='25' style='vertical-align:middle;margin-right:0px;'>"),
+    ("University Website", "https://www.caluniv.ac.in/", "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Emblem_of_CU.png/500px-Emblem_of_CU.png' width='25' style='vertical-align:middle;margin-right:0px;'>"),
+    ("GitHub", "https://github.com/hemantaph", "<img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' width='25' style='vertical-align:middle; margin:0px;'>"),
 ]
 link_html = "".join([f"<a class='link-bubble' href='{url}' target='_blank'>{icon} {txt}</a>" for txt, url, icon in LINKS])
 st.markdown(link_html, unsafe_allow_html=True)
