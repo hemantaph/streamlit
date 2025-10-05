@@ -45,7 +45,9 @@ st.set_page_config(
 ASSETS = Path(".assets")
 COVER = ASSETS / "cover.png"
 PROFILE = ASSETS / "profile.png"
-DIVIDER = ASSETS / "divider1.png"  # small rectangular strip
+DIVIDER1 = ASSETS / "divider1.png"  # small rectangular strip
+DIVIDER2 = ASSETS / "divider2.png"  # small rectangular strip
+DIVIDER3 = ASSETS / "divider3.png"  # small rectangular strip
 GALLERY_DIR = ASSETS / "gallery"
 EXTRAS_DIR = ASSETS / "extras"
 
@@ -138,7 +140,7 @@ st.markdown(
                 }
             }
             .main, .block-container, .wrap {
-                margin-top: -70px !important;
+                margin-top: -75px !important;
             }
                     .main, .block-container {
                         max-width: 960px;
@@ -155,7 +157,7 @@ st.markdown(
                     }
             .hero-name {font-size: 3rem; font-weight: 800; margin: .25rem 0 0 0}
             .light-sub {opacity:.7; margin-top: .25rem}
-            .blue-subheader {background:#e6f2ff; padding:10px 14px; border-radius:8px; font-weight:700;}
+            .blue-subheader {background: rgba(220,220,220); padding:10px 14px; border-radius:8px; font-weight:700; font-size: 1.2rem;}
             .blockquote {border-left: 4px solid #999; padding: 10px 14px; background: #fafafa; border-radius: 6px;}
             .link-bubble {display:inline-block; padding:10px 16px; border-radius:8px; border:1px solid rgba(0,0,0,.15); background:white; margin-right:10px; text-decoration:none;}
             .card {border:1px solid rgba(0,0,0,.08); border-radius:14px; padding:12px;}
@@ -239,7 +241,7 @@ iframe_html = f"""
 <div style='width:100%; max-width:1000px; margin:0 auto; height:420px; overflow:hidden; border-radius:10px; box-shadow:0 2px 16px rgba(0,0,0,0.10);'>
     <iframe
         src='data:text/html;base64,{html_b64}'
-        style='width:100%; height:600px; border:0; margin-top: -150px;'
+        style='width:100%; height:600px; border:0; margin-top: -120px;'
         sandbox='allow-scripts allow-same-origin'
     ></iframe>
 </div>
@@ -253,8 +255,8 @@ st.markdown("<div style='height:5px;'></div>", unsafe_allow_html=True)
 # (Profile and name now appear in the cover overlay above)
 
 # ---------- 3) SMALL RECTANGULAR DIVIDER ----------
-if DIVIDER.exists():
-    st.image(str(DIVIDER))
+if DIVIDER1.exists():
+    st.image(str(DIVIDER1))
 
 # ---------- 4) SUBHEADER: Welcome ----------
 st.markdown("<div class='blue-subheader'>Welcome to my portfolio</div>", unsafe_allow_html=True)
@@ -303,8 +305,8 @@ for i, (title, img_path, caption) in enumerate(card_items):
             st.markdown("</div>", unsafe_allow_html=True)
 
 # ---------- 8) SMALL RECTANGULAR DIVIDER ----------
-if DIVIDER.exists():
-    st.image(str(DIVIDER))
+if DIVIDER2.exists():
+    st.image(str(DIVIDER2))
 
 # ---------- 9) SUBHEADER: Extras ----------
 st.markdown("<div class='blue-subheader'>Extras</div>", unsafe_allow_html=True)
@@ -339,8 +341,8 @@ else:
 st.markdown("<div class='footer'>|  <b>Contact</b>  |  <a href='mailto:your.email@example.com'>email</a>  |</div>", unsafe_allow_html=True)
 
 # ---------- 13) SMALL RECTANGULAR DIVIDER (footer) ----------
-if DIVIDER.exists():
-    st.image(str(DIVIDER))
+if DIVIDER3.exists():
+    st.image(str(DIVIDER3))
 
 # close wrapper
 st.markdown("</div>", unsafe_allow_html=True)

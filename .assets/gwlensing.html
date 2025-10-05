@@ -32,7 +32,7 @@
 </head>
 <body>
         <!-- Overlay for profile and name (compact) -->
-        <div id="profile-overlay" style="position: absolute; left: 10px; bottom: 40px; background: rgba(60,60,60,0.50); padding: 10px 12px; border-radius: 8px; display: flex; align-items: center; z-index: 1000;">
+        <div id="profile-overlay" style="position: absolute; left: 10px; bottom: 70px; background: rgba(60,60,60,0.50); padding: 10px 12px; border-radius: 8px; display: flex; align-items: center; z-index: 1000;">
             <img id="profile-pic" src="PROFILE_SRC" style="width:56px;height:56px;object-fit:cover;border-radius:50%;margin-right:12px;border:2px solid rgba(255,255,255,0.9);" />
             <div style="line-height:1;">
                 <div style="font-size:1.25rem;font-weight:800;color:white;margin:0;">Hemanta Ph.</div>
@@ -40,8 +40,8 @@
             </div>
         </div>
         <!-- Details dropdown for animation description -->
-        <details style="position: absolute; right: 10px; top: 155px; z-index: 1000;">
-            <summary style="background: rgba(60,60,60,0.50); padding: 4px 10px; border-radius: 6px; color: rgba(220,220,220); font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">
+        <details style="position: absolute; right: 10px; top: 125px; z-index: 1000;">
+            <summary style="background: rgba(60,60,60,0.50); padding: 4px 5px; border-radius: 6px; color: rgba(220,220,220); font-size: 0.70rem; font-weight: 400; cursor: pointer; transition: background 0.2s;">
                 Animation Details
             </summary>
             <div style="background: rgba(40,40,40,0.7); padding: 12px; border-radius: 6px; margin-top: 6px; width: 280px; color: #eee; font-size: 0.8rem;">
@@ -117,7 +117,7 @@
             scene.background = new THREE.Color(0x000000);
 
             camera = new THREE.PerspectiveCamera(72, window.innerWidth / window.innerHeight, 0.1, 2000);
-            camera.position.set(0, 180, 350);
+            camera.position.set(0, 180, 390);
 
             renderer = new THREE.WebGLRenderer({ antialias: true });
             renderer.setSize(window.innerWidth, window.innerHeight);
