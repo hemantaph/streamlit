@@ -61,7 +61,7 @@ st.markdown(
                 left: 0;
                 width: 100vw;
                 height: 42px;
-                background: #e6f2ff;
+                background: rgba(225,225,225);
                 color: #222;
                 z-index: 10001;
                 display: flex;
@@ -91,7 +91,7 @@ st.markdown(
                 display: block;
             }
             .hamburger-navbar .nav-link:hover {
-                background: #cbe6ff;
+                background: rgba(225,225,225);
             }
             /* Pure CSS Hamburger Toggle */
             #menu-toggle {
@@ -122,7 +122,7 @@ st.markdown(
                     top: 44px;
                     left: 0;
                     width: 100vw;
-                    background: #e6f2ff;
+                    background: rgba(225,225,225);
                     flex-direction: column;
                     gap: 0;
                     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
@@ -157,7 +157,7 @@ st.markdown(
                     }
             .hero-name {font-size: 3rem; font-weight: 800; margin: .25rem 0 0 0}
             .light-sub {opacity:.7; margin-top: .25rem}
-            .blue-subheader {background: rgba(220,220,220); padding:10px 14px; border-radius:8px; font-weight:700; font-size: 1.2rem; margin-bottom: 1rem;}
+            .blue-subheader {background: rgba(225,225,225); padding:10px 14px; border-radius:8px; font-weight:700; font-size: 1.2rem; margin-bottom: 1rem;}
             .blockquote {border-left: 4px solid #999; padding: 10px 14px; background: #fafafa; border-radius: 6px; margin-bottom: 1rem;}
             .link-bubble {display:inline-block; padding:10px 16px; border-radius:8px; border:1px solid rgba(0,0,0,.15); background:white; margin-right:10px; margin-bottom: 10px; text-decoration:none;}
             .card {border:1px solid rgba(0,0,0,.08); border-radius:14px; padding:12px; margin-bottom: 1rem;}
